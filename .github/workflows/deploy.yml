@@ -27,7 +27,13 @@ jobs:
         run: npm install
 
       - name: Build
-        run: npm run build
+        run: |
+          npm run build
+          if [ ! -d "dist" ]; then
+            echo "Error: dist directory not found after build"
+            exit 1
+          fi
+          touch dist/.nojekyll
 
       - name: Setup Pages
         uses: actions/configure-pages@v4

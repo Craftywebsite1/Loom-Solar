@@ -69,10 +69,10 @@ const features = [
 ];
 
 const galleryImages = [
-  { url: "./input_file_0.png", alt: "Loom Solar Panel Installation" },
-  { url: "./input_file_1.png", alt: "CAML High Voltage Battery" },
-  { url: "./input_file_2.png", alt: "Rooftop Solar Project" },
-  { url: "./input_file_3.png", alt: "Solar Installation Team" }
+  { url: `${import.meta.env.BASE_URL}input_file_0.png`, alt: "Loom Solar Panel Installation" },
+  { url: `${import.meta.env.BASE_URL}input_file_1.png`, alt: "CAML High Voltage Battery" },
+  { url: `${import.meta.env.BASE_URL}input_file_2.png`, alt: "Rooftop Solar Project" },
+  { url: `${import.meta.env.BASE_URL}input_file_3.png`, alt: "Solar Installation Team" }
 ];
 
 export default function App() {

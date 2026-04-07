@@ -15,15 +15,28 @@
       window.onerror = function(msg, url, lineNo, columnNo, error) {
         var status = document.getElementById('loading-status');
         if (status) {
-          status.innerHTML = '<div style="color: #ff4444; text-align: left; max-width: 80vw; overflow: auto;">' +
-            '<strong>Error detected:</strong><br>' + msg + '<br>' +
-            '<small>' + url + ' line ' + lineNo + '</small>' +
+          status.innerHTML = '<div style="color: #ff4444; text-align: left; max-width: 80vw; overflow: auto; padding: 20px; background: #1a1a1a; border: 1px solid #ff4444; border-radius: 8px;">' +
+            '<h3 style="margin-top: 0;">Error detected:</h3>' +
+            '<p style="margin: 10px 0;">' + msg + '</p>' +
+            '<small style="color: #888;">' + url + ' line ' + lineNo + '</small>' +
             '</div>';
         }
         return false;
       };
+      
+      // Check if the app fails to load after 10 seconds
+      setTimeout(function() {
+        var status = document.getElementById('loading-status');
+        if (status && status.innerText === 'Loading Loom Solar...') {
+          status.innerHTML = '<div style="color: #ffcc00; text-align: center; padding: 20px;">' +
+            '<h3>App is taking too long to load...</h3>' +
+            '<p>This might be due to a script loading error or a slow connection.</p>' +
+            '<button onclick="location.reload()" style="background: #39FF14; color: black; border: none; padding: 10px 20px; border-radius: 4px; cursor: pointer; font-weight: bold;">Reload Page</button>' +
+            '</div>';
+        }
+      }, 10000);
     </script>
-    <script type="module" src="src/main.tsx"></script>
+    <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>
 

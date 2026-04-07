@@ -17,10 +17,10 @@ import {
   X
 } from 'lucide-react';
 
-import img0 from './assets/panel-installation.png';
-import img1 from './assets/caml-battery.png';
-import img2 from './assets/rooftop-project.png';
-import img3 from './assets/installation-team.png';
+import img0 from './assets/input_file_0.png';
+import img1 from './assets/input_file_1.png';
+import img2 from './assets/input_file_2.png';
+import img3 from './assets/input_file_3.png';
 
 const reviews = [
   {

@@ -3,6 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
+// Loom Solar - Premium Solar Solutions
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { 
@@ -80,6 +81,7 @@ const galleryImages = [
   { url: img3, alt: "Solar Installation Team", title: "Installation Team" }
 ];
 
+// Main Application Component
 export default function App() {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 

@@ -17,6 +17,11 @@ import {
   X
 } from 'lucide-react';
 
+import img0 from './assets/input_file_0.png';
+import img1 from './assets/input_file_1.png';
+import img2 from './assets/input_file_2.png';
+import img3 from './assets/input_file_3.png';
+
 const reviews = [
   {
     name: "Chinmayi",
@@ -69,10 +74,10 @@ const features = [
 ];
 
 const galleryImages = [
-  { url: "/Loom-Solar/input_file_0.png", alt: "Loom Solar Panel Installation" },
-  { url: "/Loom-Solar/input_file_1.png", alt: "CAML High Voltage Battery" },
-  { url: "/Loom-Solar/input_file_2.png", alt: "Rooftop Solar Project" },
-  { url: "/Loom-Solar/input_file_3.png", alt: "Solar Installation Team" }
+  { url: img0, alt: "Loom Solar Panel Installation" },
+  { url: img1, alt: "CAML High Voltage Battery" },
+  { url: img2, alt: "Rooftop Solar Project" },
+  { url: img3, alt: "Solar Installation Team" }
 ];
 
 export default function App() {

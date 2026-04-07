@@ -17,10 +17,10 @@ import {
   X
 } from 'lucide-react';
 
-import img0 from './assets/input_file_0.png';
-import img1 from './assets/input_file_1.png';
-import img2 from './assets/input_file_2.png';
-import img3 from './assets/input_file_3.png';
+import img0 from './assets/panel-installation.png';
+import img1 from './assets/caml-battery.png';
+import img2 from './assets/rooftop-project.png';
+import img3 from './assets/installation-team.png';
 
 const reviews = [
   {
@@ -74,10 +74,10 @@ const features = [
 ];
 
 const galleryImages = [
-  { url: img0, alt: "Loom Solar Panel Installation" },
-  { url: img1, alt: "CAML High Voltage Battery" },
-  { url: img2, alt: "Rooftop Solar Project" },
-  { url: img3, alt: "Solar Installation Team" }
+  { url: img0, alt: "Loom Solar Panel Installation", title: "Panel Installation" },
+  { url: img1, alt: "CAML High Voltage Battery", title: "CAML Battery" },
+  { url: img2, alt: "Rooftop Solar Project", title: "Rooftop Project" },
+  { url: img3, alt: "Solar Installation Team", title: "Installation Team" }
 ];
 
 export default function App() {
@@ -303,6 +303,7 @@ export default function App() {
                     <Maximize2 className="text-white w-8 h-8" />
                   </div>
                 </motion.div>
+                <p className="text-center text-gray-300 font-medium">{image.title}</p>
               </div>
             ))}
           </div>

@@ -1,0 +1,23 @@
+@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+@theme {
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+  --color-neon-green: #39FF14;
+  --color-dark-green: #0A2F1F;
+}
+
+@layer base {
+  body {
+    @apply bg-black text-white font-sans antialiased;
+  }
+}
+
+@layer utilities {
+  .glow-button {
+    @apply shadow-[0_0_15px_rgba(57,255,20,0.5)] transition-all duration-300 hover:shadow-[0_0_25px_rgba(57,255,20,0.8)] hover:scale-105;
+  }
+  .text-glow {
+    @apply drop-shadow-[0_0_8px_rgba(57,255,20,0.6)];
+  }
+}
